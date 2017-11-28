@@ -1,0 +1,543 @@
+[
+	{
+		"question" : "Miam, j'ai faim, et si je mangeais des fruits ce serait …",
+		"answers" : [
+			{
+				"answer": "Pomme ou poire",
+				"tags": {
+					"charac": ["acidity3", "body1", "sweetness2", "alcohol1", "flavour_intensity1"], "aroma": ["green_fruit"]
+				},
+				"isExclusive": false
+			},
+	        {
+	        	"answer": "Abricot ou pêche",
+	        	"tags" : {
+					"charac": ["acidity4", "body3", "sweetness3", "alcohol2", "flavour_intensity2"], "aroma": ["stone_fruit"]
+	        	},
+	        	"isExclusive": false
+	        },
+	        {
+	        	"answer": "Trop healthy pour moi les fruits, je préfère les pâtisseries",
+	        	"tags" : {
+					"charac": ["acidity1", "body4", "sweetness4", "alcohol3", "flavour_intensity3"], "aroma": ["dairy_mlf", "autolytic"]
+	        	},
+	        	"isExclusive": false
+	        },
+	        {
+	        	"answer": "Une salade d’orange avec un zeste de citron vert ",
+	        	"tags" : {
+					"charac": ["acidity5", "body2", "sweetness1", "alcohol1", "flavour_intensity2"], "aroma": ["citrus_fruit"]
+	        	},
+	        	"isExclusive": false
+	        },
+	        {
+	        	"answer": "Des fruits exotiques",
+	        	"tags" : {
+					"charac": ["acidity3", "body3", "sweetness3", "alcohol2", "flavour_intensity3"], "aroma": ["tropical_fruit"]
+	        	},
+	        	"isExclusive": false
+	        },
+	        {
+	        	"answer": "Des prunes, cerises",
+	        	"tags" : {
+					"charac": ["acidity2", "body4", "tannin4", "sweetness1", "alcohol5", "flavour_intensity4"], "aroma": ["black_fruit"]
+	        	},
+	        	"isExclusive": false
+	        },
+	        {
+	        	"answer": "Des fruits des bois",
+	        	"tags" : {
+					"charac": ["acidity4", "body3", "tannin3", "alcohol4", "flavour_intensity4"], "aroma": ["red_fruit"]
+	        	},
+	        	"isExclusive": false
+	        }
+		]
+	},
+	{
+		"question" : "Au ptit-déj'/ brunch je mange …",
+		"answers" : [
+			{
+				"answer": "Du salé",
+				"tags" : {
+					"charac": ["body4", "tannin3", "flavour_intensity4"], "aroma": []
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Du sucré",
+				"tags" : {
+					"charac": ["body4", "sweetness5", "alcohol4", "flavour_intensity4"], "aroma": []
+				}	,
+				"isExclusive": false
+			},
+			{
+				"answer": "Ça dépend des jours",
+				"tags" : {
+					"charac": ["body4", "flavour_intensity5"], "aroma": []
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Qu’importe tant qu’il y a du pain",
+				"tags" : {
+					"charac": ["body4", "tannin2", "sweetness2", "alcohol3", "flavour_intensity3"], "aroma": ["dairy_mlf", "autolytic"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Je prends pas de ptit-déj'/brunch",
+				"tags" : {
+					"charac": [], "aroma": []
+				},
+				"isExclusive": true
+			}
+		]
+	},
+	{
+		"question" : "Pour le brunch, j'aime …",
+		"answers" : [
+			{
+				"answer": "Du fromage",
+				"tags" : {
+					"charac": ["acidity2", "body3", "sweetness2", "alcohol3", "flavour_intensity4"], "aroma": ["dairy_mlf", "autolytic"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Des champignons",
+				"tags" : {
+					"charac": ["body4", "tannin3", "alcohol3", "flavour_intensity4"], "aroma": ["maturity"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Du bacon",
+				"tags" : {
+					"charac": ["body4", "tannin4", "alcohol3", "flavour_intensity5"], "aroma": ["animal", "oak"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Des céréales",
+				"tags" : {
+					"charac": ["body3", "tannin3", "sweetness1", "alcohol2", "flavour_intensity2"], "aroma": ["maturity"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Un yoghurt",
+				"tags" : {
+					"charac": ["acidity3", "body3", "sweetness2", "alcohol3", "flavour_intensity4"], "aroma": ["dairy_mlf"]
+				},
+				"isExclusive": false
+			}
+		]
+	},
+	{
+		"question" : "Sur mes tartines, j'étale une bonne couche de …",
+		"answers" : [
+			{
+				"answer": "Miel",
+				"tags" : {
+					"charac": ["body3", "sweetness4", "alcohol3", "flavour_intensity4"], "aroma": ["maturity", "oak"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Chocolat / Pâte à tartiner",
+				"tags" : {
+					"charac": ["body4", "tannin4", "sweetness3", "alcohol4", "flavour_intensity4"], "aroma": ["kernel"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Confiture de coing",
+				"tags" : {
+					"charac": ["acidity4", "body4", "sweetness2", "alcohol2", "flavour_intensity4"], "aroma": ["green_fruit", "dried_cooked_fruit", "floral"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Confiture de mûre, cerise ou fraise",
+				"tags" : {
+					"charac": ["acidity3", "body3", "tannin3", "sweetness1", "alcohol3", "flavour_intensity3"], "aroma": [""]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Confiture d'orange amère",
+				"tags" : {
+					"charac": ["acidity5", "body3", "sweetness2", "alcohol1", "flavour_intensity3"], "aroma": ["citrus_fruit", "floral"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Beurre, que du beurre ou au moins en \"base\"",
+				"tags" : {
+					"charac": ["acidity2", "body4", "sweetness3", "alcohol3", "flavour_intensity3"], "aroma": ["dairy_mlf"]
+				},
+				"isExclusive": false
+			}
+		]
+	},
+	{
+		"question" : "Lorsque je fais du thé, je laisse le sachet infuser …",
+		"answers" : [
+			{
+				"answer": "Quelques secondes",
+				"tags" : {
+					"charac": ["body2", "tannin2", "sweetness1", "flavour_intensity3"], "aroma": []
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Quelques minutes",
+				"tags" : {
+					"charac": ["body4", "tannin4", "alcohol3", "flavour_intensity4"], "aroma": []
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Je l'oublie à chaque fois mais j'aime quand il est bien corsé",
+				"tags" : {
+					"charac": ["body5", "tannin5", "alcohol4", "flavour_intensity5"], "aroma": []
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Je n'aime pas le thé",
+				"tags" : {
+					"charac": [], "aroma": []
+				},
+				"isExclusive": true
+			}
+		]
+	},
+	{
+		"question" : "Au réveil, j'aime bien boire …",
+		"answers" : [
+			{
+				"answer": "Du jus d'abricot",
+				"tags" : {
+					"charac": ["acidity3", "body3", "sweetness2", "alcohol3", "flavour_intensity4"], "aroma": ["stone_fruit"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Du jus d'orange",
+				"tags" : {
+					"charac": ["acidity4", "body2", "sweetness1", "alcohol2", "flavour_intensity3"], "aroma": ["citrus_fruit"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Du jus de citron",
+				"tags" : {
+					"charac": ["acidity5", "body1", "alcohol1", "flavour_intensity3"], "aroma": ["citrus_fruit", "mineral"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Un lait au chocolat",
+				"tags" : {
+					"charac": ["body4", "tannin3", "sweetness4", "alcohol4", "flavour_intensity4"], "aroma": ["kernel", "dairy_mlf"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Un café au lait ou thé/infusion",
+				"tags" : {
+					"charac": ["body4", "tannin4", "sweetness3", "alcohol3", "flavour_intensity3"], "aroma": ["kernel", "dairy_mlf"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Un espresso bien serré",
+				"tags" : {
+					"charac": ["acidity1", "body4", "tannin5", "alcohol4", "flavour_intensity5"], "aroma": ["kernel", "oak"]
+				},
+				"isExclusive": false
+			}
+		]
+	},
+	{
+		"question" : "Le matin, pour me réveiller, mon café est …",
+		"answers" : [
+			{
+				"answer": "Noir",
+				"tags" : {
+					"charac": ["body5", "tannin5", "alcohol3", "flavour_intensity5"], "aroma": ["kernel"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Avec un peu de crème/lait",
+				"tags" : {
+					"charac": ["body4", "tannin3", "sweetness2", "alcohol3", "flavour_intensity4"], "aroma": ["kernel", "dairy_mlf"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Avec du sucre",
+				"tags": {
+					"charac": ["body4", "tannin4", "sweetness4", "alcohol4", "flavour_intensity4"], "aroma": ["kernel"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Avec du sucre, lait/crème",
+				"tags" : {
+					"charac": ["body5", "tannin2", "sweetness5", "alcohol5", "flavour_intensity5"], "aroma": ["kernel", "dairy_mlf"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "J'aime pas le café !",
+				"tags" : {
+					"charac": ["body1", "alcohol1", "flavour_intensity1"], "aroma": []
+				},
+				"isExclusive": true
+			}
+		]
+	},
+	{
+		"question" : "J'aime les desserts …",
+		"answers" : [
+			{
+				"answer": "À la cannelle",
+				"tags" : {
+					"charac": ["acidity3", "body4", "tannin4", "sweetness2", "alcohol3", "flavour_intensity3"], "aroma": ["sweet_spice"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "À la vanille",
+				"tags" : {
+					"charac": ["acidity3", "body4", "tannin4", "sweetness3", "alcohol3", "flavour_intensity3"], "aroma": ["sweet_spice", "oak"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "À la menthe",
+				"tags" : {
+					"charac": ["acidity4", "body3", "tannin3", "alcohol3", "flavour_intensity2"], "aroma": ["herbal"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Aux fruits secs",
+				"tags" : {
+					"charac": ["acidity2", "body3", "tannin2", "sweetness1", "alcohol4", "flavour_intensity4"], "aroma": ["dried_fruits"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Au caramel",
+				"tags" : {
+					"charac": ["acidity2", "body5", "tannin3", "sweetness2", "alcohol4", "flavour_intensity4"], "aroma": ["oak"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Je ne mange jamais de dessert",
+				"tags" : {
+					"charac": [], "aroma": []
+				},
+				"isExclusive": true
+			}
+		]
+	},
+	{
+		"question" : "Mon dessert préféré c'est …",
+		"answers" : [
+			{
+				"answer": "Un tiramisu",
+				"tags" : {
+					"charac": ["body4", "tannin4", "sweetness4", "alcohol3", "flavour_intensity4"], "aroma": ["kernel", "dairy_mlf", "oak"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Une tarte au citron",
+				"tags" : {
+					"charac": ["acidity4", "body2", "sweetness2", "alcohol2", "flavour_intensity4"], "aroma": ["citrus_fruit", "autolytic"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Un moelleux au chocolat",
+				"tags" : {
+					"charac": ["body4", "tannin3", "sweetness4", "alcohol3", "flavour_intensity4"], "aroma": ["kernel", "oak"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Une mousse aux fruits rouges",
+				"tags" : {
+					"charac": ["acidity3", "body3", "sweetness3", "alcohol1", "flavour_intensity3"], "aroma": ["red_fruits"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Un financier aux noisettes",
+				"tags" : {
+					"charac": ["body3", "tannin1", "sweetness3", "alcohol1", "flavour_intensity2"], "aroma": ["kernel", "oak", "autolytic"]
+				},
+				"isExclusive": false
+			}
+		]
+	},
+	{
+		"question" : "À l'apéro, je grignote …",
+		"answers" : [
+			{
+				"answer": "Des dips de légumes, carottes, tomates avec des petites sauces blanches & co.",
+				"tags" : {
+					"charac": ["acidity3", "body1", "sweetness4", "alcohol1", "flavour_intensity3"], "aroma": ["herbaceous", "vegetable"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Des chips",
+				"tags" : {
+					"charac": ["acidity2", "body3", "sweetness3", "alcohol3", "flavour_intensity4"], "aroma": []
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Du saucisson",
+				"tags" : {
+					"charac": ["body4", "tannin3", "sweetness4", "alcohol4", "flavour_intensity5"], "aroma": ["maturity"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Du fromage",
+				"tags" : {
+					"charac": ["body5", "tannin2", "sweetness2", "alcohol4", "flavour_intensity5"], "aroma": ["dairy_mlf", "maturity"]
+				},
+				"isExclusive": false
+			}
+		]
+	},
+	{
+		"question" : "J'aime la viande …",
+		"answers" : [
+			{
+				"answer": "Bœuf et plutôt saignant !",
+				"tags" : {
+					"charac": ["body4", "tannin4", "alcohol4", "flavour_intensity4"], "aroma": ["maturity", "animal"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Goûteuse & corsée, comme la chasse",
+				"tags" : {
+					"charac": ["body5", "tannin5", "sweetness2", "alcohol5", "flavour_intensity5"], "aroma": ["maturity", "animal"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Poulet & autres viandes blanches",
+				"tags" : {
+					"charac": ["body3", "tannin2", "alcohol2", "flavour_intensity2"], "aroma": ["oak", "herbal"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Surtout les garnitures de chasse: spätzlis, poire au vin.",
+				"tags" : {
+					"charac": ["body2", "sweetness4", "alcohol3", "flavour_intensity3"], "aroma": ["cooked_fruits", "red_fruit", "sweet_spice"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Je n'aime pas la viande / je suis végétarien - végan",
+				"tags" : {
+					"charac": [], "aroma": []
+				},
+				"isExclusive": true
+			}	
+		]
+	},
+	{
+		"question" : "Quand je sors, mon alcool c'est plutôt …",
+		"answers" : [
+			{
+				"answer": "Un gin tonic",
+				"tags" : {
+					"charac": ["acidity4", "body2", "tannin3", "sweetness2", "alcohol4", "flavour_intensity3"], "aroma": ["pungent_spice", "herbal", "herbaceous"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Un rhum coca",
+				"tags" : {
+					"charac": ["acidity1", "body5", "tannin2", "sweetness5", "alcohol4", "flavour_intensity3"], "aroma": ["oak"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Un Aperol Spritz",
+				"tags" : {
+					"charac": ["acidity2", "body3", "tannin4", "sweetness1", "alcohol3", "flavour_intensity4"], "aroma": ["citrus_fruit", "floral"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Des shots de vodka ou de tequila",
+				"tags" : {
+					"charac": ["acidity3", "body4", "alcohol5", "flavour_intensity5"], "aroma": ["maturity"]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Du Champagne, Prosecco ou autres mousseux",
+				"tags" : {
+					"charac": ["acidity5", "body1", "sweetness3", "alcohol2", "flavour_intensity2"], "aroma": ["citrus_fruit", "autolytic", "floral"]
+				},
+				"isExclusive": false
+			}
+		]
+	},
+	{
+		"question" : "Quand je déguste un plat …",
+		"answers" : [
+			{
+				"answer": "Je le goûte avant de l'assaisonner",
+				"tags" : {
+					"charac": ["body3", "flavour_intensity3"], "aroma": [""]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "J'ajoute systématiquement du sel ou très fréquemment",
+				"tags" : {
+					"charac": ["body5", "tannin3", "alcohol2", "flavour_intensity4"], "aroma": [""]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "J'ajoute systématiquement du poivre ou très fréquemment",
+				"tags" : {
+					"charac": ["body4", "tannin4", "alcohol3", "flavour_intensity4"], "aroma": [""]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "J'aime que cela soit bien épicé",
+				"tags" : {
+					"charac": ["body5", "tannin5", "sweetness2", "alcohol4", "flavour_intensity5"], "aroma": [""]
+				},
+				"isExclusive": false
+			},
+			{
+				"answer": "Je le déguste tel quel la plupart du temps",
+				"tags" : {
+					"charac": ["body2", "flavour_intensity3"], "aroma": [""]
+				},
+				"isExclusive": false
+			}
+		]
+	}
+]

@@ -1,0 +1,51 @@
+[
+	{
+		"answers" : [
+			{
+				"answer": "Pomme ou poire",
+			},
+	        {
+	        	"answer": "Abricot ou pêche",
+	        	"tags" : {
+					"charac": ["acidity4", "body3", "sweetness3", "alcohol2", "flavour_intensity2"], "aroma": ["stone_fruit"]
+	        	},
+	        	"isExclusive": false
+	        },
+	        {
+	        	"answer": "Trop healthy pour moi les fruits, je préfère les pâtisseries",
+	        	"tags" : {
+					"charac": ["acidity1", "body4", "sweetness4", "alcohol3", "flavour_intensity3"], "aroma": ["dairy_mlf", "autolytic"]
+	        	},
+	        	"isExclusive": false
+	        },
+	        {
+	        	"answer": "Une salade d’orange avec un zeste de citron vert ",
+	        	"tags" : {
+					"charac": ["acidity5", "body2", "sweetness1", "alcohol1", "flavour_intensity2"], "aroma": ["citrus_fruit"]
+	        	},
+	        	"isExclusive": false
+	        },
+	        {
+	        	"answer": "Des fruits exotiques",
+	        	"tags" : {
+					"charac": ["acidity3", "body3", "sweetness3", "alcohol2", "flavour_intensity3"], "aroma": ["tropical_fruit"]
+	        	},
+	        	"isExclusive": false
+	        },
+	        {
+	        	"answer": "Des prunes, cerises",
+	        	"tags" : {
+					"charac": ["acidity2", "body4", "tannin4", "sweetness1", "alcohol5", "flavour_intensity4"], "aroma": ["black_fruit"]
+	        	},
+	        	"isExclusive": false
+	        },
+	        {
+	        	"answer": "Des fruits des bois",
+	        	"tags" : {
+					"charac": ["acidity4", "body3", "tannin3", "alcohol4", "flavour_intensity4"], "aroma": ["red_fruit"]
+	        	},
+	        	"isExclusive": false
+	        }
+		]
+	}
+]

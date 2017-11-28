@@ -1,0 +1,922 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1822742F8413AB09D58287E7 /* Pods_IntelliWine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D429401B434FE5670E06C21B /* Pods_IntelliWine.framework */; };
+		24CFFD8E58644EABD4B0AE0C /* Pods_IntelliWineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C2FA4362FC25EF16A459BA /* Pods_IntelliWineTests.framework */; };
+		826D217A1DCF32EC001984CD /* UserVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826D21791DCF32EC001984CD /* UserVector.swift */; };
+		826D217C1DD2F99A001984CD /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826D217B1DD2F99A001984CD /* LoadingViewController.swift */; };
+		826D217E1DD2FADD001984CD /* UIImage+Capture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826D217D1DD2FADD001984CD /* UIImage+Capture.swift */; };
+		827CBBCA1DA95911006A7306 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827CBBC91DA95911006A7306 /* AppDelegate.swift */; };
+		827CBBCC1DA95911006A7306 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827CBBCB1DA95911006A7306 /* MenuViewController.swift */; };
+		827CBBCF1DA95911006A7306 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 827CBBCD1DA95911006A7306 /* Main.storyboard */; };
+		827CBBD41DA95911006A7306 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 827CBBD21DA95911006A7306 /* LaunchScreen.storyboard */; };
+		82B11B861DB7CDC800C983BB /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B11B851DB7CDC800C983BB /* QuestionViewController.swift */; };
+		82B11B8A1DB7CE4900C983BB /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B11B891DB7CE4900C983BB /* AnswerCell.swift */; };
+		82EB08391DB7D2D700ED1F15 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EB08381DB7D2D700ED1F15 /* Question.swift */; };
+		82EB083B1DB7D85000ED1F15 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EB083A1DB7D85000ED1F15 /* Answer.swift */; };
+		82EB083F1DBA3B6700ED1F15 /* QuizAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EB083E1DBA3B6700ED1F15 /* QuizAnswerViewController.swift */; };
+		82ECDFC41DABEFCE0050A410 /* UIColors+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ECDFC31DABEFCE0050A410 /* UIColors+Hex.swift */; };
+		FC5A8D781FCC3AA9008327A4 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5A8D771FCC3AA9008327A4 /* Tag.swift */; };
+		FC5A8D7D1FCC4DE1008327A4 /* QuestionDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5A8D7C1FCC4DE1008327A4 /* QuestionDataModel.swift */; };
+		FC5A8D811FCC5510008327A4 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5A8D801FCC5510008327A4 /* Error.swift */; };
+		FC5A8D831FCC57C1008327A4 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5A8D821FCC57C1008327A4 /* UIViewController+Extension.swift */; };
+		FC62A29B1FCC6D4E002C9609 /* vector_data.json in Resources */ = {isa = PBXBuildFile; fileRef = FC62A29A1FCC6D4D002C9609 /* vector_data.json */; };
+		FC62A29D1FCC6DCB002C9609 /* UserVectorDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC62A29C1FCC6DCB002C9609 /* UserVectorDataModel.swift */; };
+		FC62A2A21FCC8639002C9609 /* SimilarityScoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC62A2A11FCC8639002C9609 /* SimilarityScoreDataModel.swift */; };
+		FC62A2A51FCD6406002C9609 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC62A2A41FCD6406002C9609 /* NavigationController.swift */; };
+		FC62A2A71FCD9C39002C9609 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 827CBBD01DA95911006A7306 /* Assets.xcassets */; };
+		FC62A2B11FCE1A4B002C9609 /* IntelliWineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC62A2B01FCE1A4B002C9609 /* IntelliWineUITests.swift */; };
+		FC62A2BF1FCE220E002C9609 /* IntelliWineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC62A2BE1FCE220E002C9609 /* IntelliWineTests.swift */; };
+		FC62A2C81FCE237D002C9609 /* MockRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC62A2C71FCE237D002C9609 /* MockRequest.swift */; };
+		FC62A2CA1FCE276E002C9609 /* quiz_data.json in Resources */ = {isa = PBXBuildFile; fileRef = FC5A8D791FCC4AC9008327A4 /* quiz_data.json */; };
+		FC62A2CC1FCE2896002C9609 /* bad_quiz_data.json in Resources */ = {isa = PBXBuildFile; fileRef = FC62A2CB1FCE2896002C9609 /* bad_quiz_data.json */; };
+		FC62A2CE1FCE2CE5002C9609 /* quiz_data.json in Resources */ = {isa = PBXBuildFile; fileRef = FC62A2C61FCE2361002C9609 /* quiz_data.json */; };
+		FC897F441FCC220A00DA845F /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC897F3F1FCC220A00DA845F /* Roboto-Medium.ttf */; };
+		FC897F461FCC220A00DA845F /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC897F411FCC220A00DA845F /* Roboto-Light.ttf */; };
+		FC897F471FCC220A00DA845F /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC897F421FCC220A00DA845F /* Roboto-Regular.ttf */; };
+		FC897F491FCC2B4100DA845F /* UILabel+Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC897F481FCC2B4100DA845F /* UILabel+Height.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC62A2B31FCE1A4B002C9609 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 827CBBBE1DA95911006A7306 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 827CBBC51DA95911006A7306;
+			remoteInfo = IntelliWine;
+		};
+		FC62A2C11FCE220E002C9609 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 827CBBBE1DA95911006A7306 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 827CBBC51DA95911006A7306;
+			remoteInfo = IntelliWine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06F9184515825AAF46AC7800 /* Pods-IntelliWineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelliWineTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IntelliWineTests/Pods-IntelliWineTests.release.xcconfig"; sourceTree = "<group>"; };
+		2B6F8ED5BB6F29080954FAD4 /* Pods-IntelliWine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelliWine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IntelliWine/Pods-IntelliWine.debug.xcconfig"; sourceTree = "<group>"; };
+		75EBE2EAB72183D2961243FB /* Pods-IntelliWine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelliWine.release.xcconfig"; path = "Pods/Target Support Files/Pods-IntelliWine/Pods-IntelliWine.release.xcconfig"; sourceTree = "<group>"; };
+		826D21791DCF32EC001984CD /* UserVector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserVector.swift; sourceTree = "<group>"; };
+		826D217B1DD2F99A001984CD /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		826D217D1DD2FADD001984CD /* UIImage+Capture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Capture.swift"; sourceTree = "<group>"; };
+		827CBBC61DA95911006A7306 /* IntelliWine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntelliWine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		827CBBC91DA95911006A7306 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		827CBBCB1DA95911006A7306 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		827CBBCE1DA95911006A7306 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		827CBBD01DA95911006A7306 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		827CBBD31DA95911006A7306 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		827CBBD51DA95911006A7306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82B11B851DB7CDC800C983BB /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		82B11B891DB7CE4900C983BB /* AnswerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
+		82EB08381DB7D2D700ED1F15 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		82EB083A1DB7D85000ED1F15 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		82EB083E1DBA3B6700ED1F15 /* QuizAnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizAnswerViewController.swift; sourceTree = "<group>"; };
+		82ECDFC31DABEFCE0050A410 /* UIColors+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColors+Hex.swift"; sourceTree = "<group>"; };
+		95B7B37769C9AA6373A4F73E /* Pods-IntelliWineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelliWineTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IntelliWineTests/Pods-IntelliWineTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D2C2FA4362FC25EF16A459BA /* Pods_IntelliWineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntelliWineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D429401B434FE5670E06C21B /* Pods_IntelliWine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntelliWine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC5A8D771FCC3AA9008327A4 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		FC5A8D791FCC4AC9008327A4 /* quiz_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = quiz_data.json; sourceTree = "<group>"; };
+		FC5A8D7C1FCC4DE1008327A4 /* QuestionDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDataModel.swift; sourceTree = "<group>"; };
+		FC5A8D801FCC5510008327A4 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		FC5A8D821FCC57C1008327A4 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		FC62A29A1FCC6D4D002C9609 /* vector_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vector_data.json; sourceTree = "<group>"; };
+		FC62A29C1FCC6DCB002C9609 /* UserVectorDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVectorDataModel.swift; sourceTree = "<group>"; };
+		FC62A2A11FCC8639002C9609 /* SimilarityScoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarityScoreDataModel.swift; sourceTree = "<group>"; };
+		FC62A2A41FCD6406002C9609 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		FC62A2AE1FCE1A4B002C9609 /* IntelliWineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntelliWineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC62A2B01FCE1A4B002C9609 /* IntelliWineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntelliWineUITests.swift; sourceTree = "<group>"; };
+		FC62A2B21FCE1A4B002C9609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC62A2BC1FCE220E002C9609 /* IntelliWineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntelliWineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC62A2BE1FCE220E002C9609 /* IntelliWineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntelliWineTests.swift; sourceTree = "<group>"; };
+		FC62A2C01FCE220E002C9609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC62A2C61FCE2361002C9609 /* quiz_data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = quiz_data.json; sourceTree = "<group>"; };
+		FC62A2C71FCE237D002C9609 /* MockRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRequest.swift; sourceTree = "<group>"; };
+		FC62A2CB1FCE2896002C9609 /* bad_quiz_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bad_quiz_data.json; sourceTree = "<group>"; };
+		FC897F3F1FCC220A00DA845F /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		FC897F411FCC220A00DA845F /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		FC897F421FCC220A00DA845F /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		FC897F481FCC2B4100DA845F /* UILabel+Height.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Height.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		827CBBC31DA95911006A7306 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1822742F8413AB09D58287E7 /* Pods_IntelliWine.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC62A2AB1FCE1A4B002C9609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC62A2B91FCE220E002C9609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24CFFD8E58644EABD4B0AE0C /* Pods_IntelliWineTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F0ACBC0387D7DEA8FD2338A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D429401B434FE5670E06C21B /* Pods_IntelliWine.framework */,
+				D2C2FA4362FC25EF16A459BA /* Pods_IntelliWineTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		827CBBBD1DA95911006A7306 = {
+			isa = PBXGroup;
+			children = (
+				827CBBC81DA95911006A7306 /* IntelliWine */,
+				FC62A2AF1FCE1A4B002C9609 /* IntelliWineUITests */,
+				FC62A2BD1FCE220E002C9609 /* IntelliWineTests */,
+				827CBBC71DA95911006A7306 /* Products */,
+				A7AAFA862D756AEA08C0104A /* Pods */,
+				2F0ACBC0387D7DEA8FD2338A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		827CBBC71DA95911006A7306 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				827CBBC61DA95911006A7306 /* IntelliWine.app */,
+				FC62A2AE1FCE1A4B002C9609 /* IntelliWineUITests.xctest */,
+				FC62A2BC1FCE220E002C9609 /* IntelliWineTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		827CBBC81DA95911006A7306 /* IntelliWine */ = {
+			isa = PBXGroup;
+			children = (
+				827CBBC91DA95911006A7306 /* AppDelegate.swift */,
+				827CBBD51DA95911006A7306 /* Info.plist */,
+				82ECDFC21DABEFC30050A410 /* Utils */,
+				FC62A2A61FCD7C39002C9609 /* Extensions */,
+				82EB08371DB7D2CD00ED1F15 /* Models */,
+				FC5A8D7B1FCC4AFA008327A4 /* Data Models */,
+				FC5A8D7E1FCC4F52008327A4 /* View Controllers */,
+				FC5A8D7F1FCC4F6C008327A4 /* User Interfaces */,
+				FC897F3C1FCC21E200DA845F /* Resources */,
+			);
+			path = IntelliWine;
+			sourceTree = "<group>";
+		};
+		82EB08371DB7D2CD00ED1F15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				82EB083A1DB7D85000ED1F15 /* Answer.swift */,
+				82EB08381DB7D2D700ED1F15 /* Question.swift */,
+				FC5A8D771FCC3AA9008327A4 /* Tag.swift */,
+				826D21791DCF32EC001984CD /* UserVector.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		82ECDFC21DABEFC30050A410 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FC5A8D801FCC5510008327A4 /* Error.swift */,
+				FC62A2A41FCD6406002C9609 /* NavigationController.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		A7AAFA862D756AEA08C0104A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B6F8ED5BB6F29080954FAD4 /* Pods-IntelliWine.debug.xcconfig */,
+				75EBE2EAB72183D2961243FB /* Pods-IntelliWine.release.xcconfig */,
+				95B7B37769C9AA6373A4F73E /* Pods-IntelliWineTests.debug.xcconfig */,
+				06F9184515825AAF46AC7800 /* Pods-IntelliWineTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FC5A8D7B1FCC4AFA008327A4 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				FC5A8D7C1FCC4DE1008327A4 /* QuestionDataModel.swift */,
+				FC62A2A11FCC8639002C9609 /* SimilarityScoreDataModel.swift */,
+				FC62A29C1FCC6DCB002C9609 /* UserVectorDataModel.swift */,
+			);
+			name = "Data Models";
+			sourceTree = "<group>";
+		};
+		FC5A8D7E1FCC4F52008327A4 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC62A2A81FCDC599002C9609 /* Cells */,
+				826D217B1DD2F99A001984CD /* LoadingViewController.swift */,
+				827CBBCB1DA95911006A7306 /* MenuViewController.swift */,
+				82B11B851DB7CDC800C983BB /* QuestionViewController.swift */,
+				82EB083E1DBA3B6700ED1F15 /* QuizAnswerViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FC5A8D7F1FCC4F6C008327A4 /* User Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				827CBBD21DA95911006A7306 /* LaunchScreen.storyboard */,
+				827CBBCD1DA95911006A7306 /* Main.storyboard */,
+			);
+			name = "User Interfaces";
+			sourceTree = "<group>";
+		};
+		FC62A2A61FCD7C39002C9609 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				82ECDFC31DABEFCE0050A410 /* UIColors+Hex.swift */,
+				826D217D1DD2FADD001984CD /* UIImage+Capture.swift */,
+				FC897F481FCC2B4100DA845F /* UILabel+Height.swift */,
+				FC5A8D821FCC57C1008327A4 /* UIViewController+Extension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		FC62A2A81FCDC599002C9609 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				82B11B891DB7CE4900C983BB /* AnswerCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		FC62A2A91FCDC61C002C9609 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FC62A2C61FCE2361002C9609 /* quiz_data.json */,
+				FC62A29A1FCC6D4D002C9609 /* vector_data.json */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		FC62A2AF1FCE1A4B002C9609 /* IntelliWineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FC62A2B01FCE1A4B002C9609 /* IntelliWineUITests.swift */,
+				FC62A2B21FCE1A4B002C9609 /* Info.plist */,
+			);
+			path = IntelliWineUITests;
+			sourceTree = "<group>";
+		};
+		FC62A2BD1FCE220E002C9609 /* IntelliWineTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC62A2BE1FCE220E002C9609 /* IntelliWineTests.swift */,
+				FC62A2C71FCE237D002C9609 /* MockRequest.swift */,
+				FC62A2C01FCE220E002C9609 /* Info.plist */,
+				FC62A2C91FCE2633002C9609 /* Resources */,
+			);
+			path = IntelliWineTests;
+			sourceTree = "<group>";
+		};
+		FC62A2C91FCE2633002C9609 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FC5A8D791FCC4AC9008327A4 /* quiz_data.json */,
+				FC62A2CB1FCE2896002C9609 /* bad_quiz_data.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FC897F3C1FCC21E200DA845F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				827CBBD01DA95911006A7306 /* Assets.xcassets */,
+				FC62A2A91FCDC61C002C9609 /* Data */,
+				FC897F3D1FCC21E700DA845F /* Fonts */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FC897F3D1FCC21E700DA845F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FC897F411FCC220A00DA845F /* Roboto-Light.ttf */,
+				FC897F3F1FCC220A00DA845F /* Roboto-Medium.ttf */,
+				FC897F421FCC220A00DA845F /* Roboto-Regular.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		827CBBC51DA95911006A7306 /* IntelliWine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 827CBBD81DA95911006A7306 /* Build configuration list for PBXNativeTarget "IntelliWine" */;
+			buildPhases = (
+				FE506DF0E7D4B9F8A7A71D6C /* [CP] Check Pods Manifest.lock */,
+				827CBBC21DA95911006A7306 /* Sources */,
+				827CBBC31DA95911006A7306 /* Frameworks */,
+				827CBBC41DA95911006A7306 /* Resources */,
+				695FBE3DF82DCC1902049FF4 /* [CP] Embed Pods Frameworks */,
+				5194B5BC6EE26B57B63147CA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntelliWine;
+			productName = IntelliWine;
+			productReference = 827CBBC61DA95911006A7306 /* IntelliWine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC62A2AD1FCE1A4B002C9609 /* IntelliWineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC62A2B51FCE1A4B002C9609 /* Build configuration list for PBXNativeTarget "IntelliWineUITests" */;
+			buildPhases = (
+				FC62A2AA1FCE1A4B002C9609 /* Sources */,
+				FC62A2AB1FCE1A4B002C9609 /* Frameworks */,
+				FC62A2AC1FCE1A4B002C9609 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC62A2B41FCE1A4B002C9609 /* PBXTargetDependency */,
+			);
+			name = IntelliWineUITests;
+			productName = IntelliWineUITests;
+			productReference = FC62A2AE1FCE1A4B002C9609 /* IntelliWineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		FC62A2BB1FCE220E002C9609 /* IntelliWineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC62A2C31FCE220E002C9609 /* Build configuration list for PBXNativeTarget "IntelliWineTests" */;
+			buildPhases = (
+				10603D6F65506223F1B53714 /* [CP] Check Pods Manifest.lock */,
+				FC62A2B81FCE220E002C9609 /* Sources */,
+				FC62A2B91FCE220E002C9609 /* Frameworks */,
+				FC62A2BA1FCE220E002C9609 /* Resources */,
+				81C3049CD142EF5F2D636C74 /* [CP] Embed Pods Frameworks */,
+				B1DA218DE22860550E7C12E6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC62A2C21FCE220E002C9609 /* PBXTargetDependency */,
+			);
+			name = IntelliWineTests;
+			productName = IntelliWineTests;
+			productReference = FC62A2BC1FCE220E002C9609 /* IntelliWineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		827CBBBE1DA95911006A7306 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = IntelliWine;
+				TargetAttributes = {
+					827CBBC51DA95911006A7306 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 847P2LXN5F;
+						LastSwiftMigration = 0910;
+					};
+					FC62A2AD1FCE1A4B002C9609 = {
+						CreatedOnToolsVersion = 9.1;
+						DevelopmentTeam = 847P2LXN5F;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 827CBBC51DA95911006A7306;
+					};
+					FC62A2BB1FCE220E002C9609 = {
+						CreatedOnToolsVersion = 9.1;
+						DevelopmentTeam = 847P2LXN5F;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 827CBBC51DA95911006A7306;
+					};
+				};
+			};
+			buildConfigurationList = 827CBBC11DA95911006A7306 /* Build configuration list for PBXProject "IntelliWine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 827CBBBD1DA95911006A7306;
+			productRefGroup = 827CBBC71DA95911006A7306 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				827CBBC51DA95911006A7306 /* IntelliWine */,
+				FC62A2AD1FCE1A4B002C9609 /* IntelliWineUITests */,
+				FC62A2BB1FCE220E002C9609 /* IntelliWineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		827CBBC41DA95911006A7306 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC62A2CE1FCE2CE5002C9609 /* quiz_data.json in Resources */,
+				FC897F441FCC220A00DA845F /* Roboto-Medium.ttf in Resources */,
+				827CBBD41DA95911006A7306 /* LaunchScreen.storyboard in Resources */,
+				FC897F471FCC220A00DA845F /* Roboto-Regular.ttf in Resources */,
+				FC62A29B1FCC6D4E002C9609 /* vector_data.json in Resources */,
+				FC897F461FCC220A00DA845F /* Roboto-Light.ttf in Resources */,
+				FC62A2A71FCD9C39002C9609 /* Assets.xcassets in Resources */,
+				827CBBCF1DA95911006A7306 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC62A2AC1FCE1A4B002C9609 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC62A2BA1FCE220E002C9609 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC62A2CC1FCE2896002C9609 /* bad_quiz_data.json in Resources */,
+				FC62A2CA1FCE276E002C9609 /* quiz_data.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10603D6F65506223F1B53714 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IntelliWineTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5194B5BC6EE26B57B63147CA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IntelliWine/Pods-IntelliWine-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		695FBE3DF82DCC1902049FF4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IntelliWine/Pods-IntelliWine-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS10.0/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IntelliWine/Pods-IntelliWine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81C3049CD142EF5F2D636C74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IntelliWineTests/Pods-IntelliWineTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS11.1/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IntelliWineTests/Pods-IntelliWineTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1DA218DE22860550E7C12E6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IntelliWineTests/Pods-IntelliWineTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE506DF0E7D4B9F8A7A71D6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IntelliWine-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		827CBBC21DA95911006A7306 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC5A8D811FCC5510008327A4 /* Error.swift in Sources */,
+				FC62A29D1FCC6DCB002C9609 /* UserVectorDataModel.swift in Sources */,
+				827CBBCC1DA95911006A7306 /* MenuViewController.swift in Sources */,
+				82ECDFC41DABEFCE0050A410 /* UIColors+Hex.swift in Sources */,
+				FC5A8D831FCC57C1008327A4 /* UIViewController+Extension.swift in Sources */,
+				FC62A2A21FCC8639002C9609 /* SimilarityScoreDataModel.swift in Sources */,
+				82EB083B1DB7D85000ED1F15 /* Answer.swift in Sources */,
+				826D217C1DD2F99A001984CD /* LoadingViewController.swift in Sources */,
+				826D217A1DCF32EC001984CD /* UserVector.swift in Sources */,
+				82EB083F1DBA3B6700ED1F15 /* QuizAnswerViewController.swift in Sources */,
+				82EB08391DB7D2D700ED1F15 /* Question.swift in Sources */,
+				82B11B8A1DB7CE4900C983BB /* AnswerCell.swift in Sources */,
+				82B11B861DB7CDC800C983BB /* QuestionViewController.swift in Sources */,
+				FC5A8D7D1FCC4DE1008327A4 /* QuestionDataModel.swift in Sources */,
+				FC5A8D781FCC3AA9008327A4 /* Tag.swift in Sources */,
+				826D217E1DD2FADD001984CD /* UIImage+Capture.swift in Sources */,
+				FC62A2A51FCD6406002C9609 /* NavigationController.swift in Sources */,
+				827CBBCA1DA95911006A7306 /* AppDelegate.swift in Sources */,
+				FC897F491FCC2B4100DA845F /* UILabel+Height.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC62A2AA1FCE1A4B002C9609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC62A2B11FCE1A4B002C9609 /* IntelliWineUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC62A2B81FCE220E002C9609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC62A2BF1FCE220E002C9609 /* IntelliWineTests.swift in Sources */,
+				FC62A2C81FCE237D002C9609 /* MockRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC62A2B41FCE1A4B002C9609 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 827CBBC51DA95911006A7306 /* IntelliWine */;
+			targetProxy = FC62A2B31FCE1A4B002C9609 /* PBXContainerItemProxy */;
+		};
+		FC62A2C21FCE220E002C9609 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 827CBBC51DA95911006A7306 /* IntelliWine */;
+			targetProxy = FC62A2C11FCE220E002C9609 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		827CBBCD1DA95911006A7306 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				827CBBCE1DA95911006A7306 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		827CBBD21DA95911006A7306 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				827CBBD31DA95911006A7306 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		827CBBD61DA95911006A7306 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		827CBBD71DA95911006A7306 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		827CBBD91DA95911006A7306 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B6F8ED5BB6F29080954FAD4 /* Pods-IntelliWine.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = IntelliWine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.IntelliWine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		827CBBDA1DA95911006A7306 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75EBE2EAB72183D2961243FB /* Pods-IntelliWine.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = IntelliWine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.IntelliWine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		FC62A2B61FCE1A4B002C9609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 847P2LXN5F;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = IntelliWineUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cedric.IntelliWineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IntelliWine;
+			};
+			name = Debug;
+		};
+		FC62A2B71FCE1A4B002C9609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 847P2LXN5F;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = IntelliWineUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cedric.IntelliWineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IntelliWine;
+			};
+			name = Release;
+		};
+		FC62A2C41FCE220E002C9609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95B7B37769C9AA6373A4F73E /* Pods-IntelliWineTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 847P2LXN5F;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = IntelliWineTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cedric.IntelliWineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IntelliWine.app/IntelliWine";
+			};
+			name = Debug;
+		};
+		FC62A2C51FCE220E002C9609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06F9184515825AAF46AC7800 /* Pods-IntelliWineTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 847P2LXN5F;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = IntelliWineTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cedric.IntelliWineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IntelliWine.app/IntelliWine";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		827CBBC11DA95911006A7306 /* Build configuration list for PBXProject "IntelliWine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				827CBBD61DA95911006A7306 /* Debug */,
+				827CBBD71DA95911006A7306 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		827CBBD81DA95911006A7306 /* Build configuration list for PBXNativeTarget "IntelliWine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				827CBBD91DA95911006A7306 /* Debug */,
+				827CBBDA1DA95911006A7306 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC62A2B51FCE1A4B002C9609 /* Build configuration list for PBXNativeTarget "IntelliWineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC62A2B61FCE1A4B002C9609 /* Debug */,
+				FC62A2B71FCE1A4B002C9609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC62A2C31FCE220E002C9609 /* Build configuration list for PBXNativeTarget "IntelliWineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC62A2C41FCE220E002C9609 /* Debug */,
+				FC62A2C51FCE220E002C9609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 827CBBBE1DA95911006A7306 /* Project object */;
+}
